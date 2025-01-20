@@ -239,18 +239,19 @@
 
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="https://formspree.io/f/xpwwvqvb" method="POST">
+            
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Full Name" name="name" autocomplete="off" required>
+                <input type="email" placeholder="Email Address" name="email" autocomplete="off" required>
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" placeholder="Mobile Number" name="phone" autocomplete="off" required>
+                <input type="text" placeholder="Email Subject" name="subject" autocomplete="off" required>
             </div>
 
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" autocomplete="off" required ></textarea>
 
             <input type="submit" value="Send Message" class="btn">
 
